@@ -310,21 +310,54 @@ body {
 
 .nav-link {
     position: relative;
+    display: inline-block;
+    font-family: 'Cinzel', 'Times New Roman', serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.9rem;
+    color: #1a1424;
+    padding-bottom: 0.35rem;
+    transition: color 0.3s ease;
 }
 
 .nav-link::after {
     content: '';
     position: absolute;
     width: 0;
-    height: 3px;
-    bottom: -5px;
+    height: 2px;
+    bottom: -6px;
     left: 0;
-    background-color: var(--primary);
+    background: linear-gradient(90deg, #b68c4a 0%, #f3d9a4 100%);
     transition: width 0.3s ease;
 }
 
-.nav-link:hover::after {
+.nav-link:hover,
+.nav-link:focus {
+    color: #c9a457;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
     width: 100%;
+}
+
+.nav-link-mobile {
+    display: block;
+    font-size: 1rem;
+    letter-spacing: 0.25em;
+    color: #1a1424;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid rgba(182, 140, 74, 0.2);
+}
+
+.nav-brand-name {
+    font-family: 'Cinzel', 'Times New Roman', serif;
+    font-size: 1rem;
+    letter-spacing: 0.3em;
+    font-weight: 600;
+    color: #1a1424;
+    text-transform: uppercase;
 }
 
 .social-icon {

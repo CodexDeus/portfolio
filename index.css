@@ -417,8 +417,8 @@ body {
 
 /* Uniform style for contact social icons */
 .contact-social {
-  width: 56px;
-  height: 56px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -430,15 +430,11 @@ body {
   box-sizing: border-box;
 }
 
-.contact-social i,
-.contact-social svg {
-  font-size: 1.8rem !important;
-  width: 30px;
-  height: 30px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.contact-social img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  display: block;
 }
 
 .contact-social:hover {
